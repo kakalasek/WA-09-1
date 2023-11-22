@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>GUESS YOUR NUMBER</h1>
+
+    <div class="big-box">
+      <div class="one-guess">
+        <label for="one-number-input">One</label>
+        <input type="number" max="1001" id="one-number-input" />
+        <button onclick="guessTheNumber()">guess</button>
+        <br />
+        <br />
+        <label id="result"></label>
+        <br />
+        <br />
+        <button onclick="reset()">RESET</button>
+      </div>
+      <div class="modulo-guess">
+        <label for="modulo-number-input">Modulo</label>
+        <input type="number" max="99" min="1" id="modulo-number-input" />
+        <button onclick="guessTheModuloNumber()">guess</button>
+      </div>
+      <div class="modulo-list">
+        <label id="list-of-modulos"></label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
